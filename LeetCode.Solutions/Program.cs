@@ -1,12 +1,12 @@
 ﻿using LeetCode.Solutions;
 
-int[] data = [1, 2];
+int[] data = [8154, 9139, 8194, 3346, 5450, 9190, 133, 8239, 4606, 8671, 8412, 6290];
 
-var obj = new LeetCode_00229();
+var obj = new LeetCode_02404();
 
-var result = obj.MajorityElement(data);
+var result = obj.MostFrequentEven(data);
 
-PrintCollection(result);
+PrintInt(result);
 
 #region Print Methods
 
