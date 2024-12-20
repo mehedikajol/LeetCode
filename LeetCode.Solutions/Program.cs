@@ -1,12 +1,12 @@
 ﻿using LeetCode.Solutions;
 
-var data = new int[] { 2, 2, 1, 1, 1, 2, 2 };
+int[] data = [1, 2];
 
-var obj = new LeetCode_00169();
+var obj = new LeetCode_00229();
 
 var result = obj.MajorityElement(data);
 
-PrintInt(result);
+PrintCollection(result);
 
 #region Print Methods
 
@@ -15,11 +15,11 @@ void PrintInt(int data)
     Console.WriteLine(data);
 }
 
-void PrintArray(int[] arr)
+void PrintCollection(IEnumerable<int> arr)
 {
-    for (int i = 0; i < arr.Length; i++)
+    for (int i = 0; i < arr.Count(); i++)
     {
-        Console.Write(arr[i] + " ");
+        Console.Write(arr.ElementAt(i) + " ");
     }
     Console.WriteLine();
 }
