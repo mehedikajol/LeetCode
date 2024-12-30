@@ -1,12 +1,12 @@
 ﻿using LeetCode.Solutions;
 
-int[] data = [1, 1, 1, 3, 3, 4, 3, 2, 4, 2];
+int[][] data = [[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]];
 
-var obj = new LeetCode_00217();
+var obj = new LeetCode_00056();
 
-var result = obj.ContainsDuplicate(data);
+var result = obj.Merge(data);
 
-PrintBoolean(result);
+Print2DCollection(result);
 
 #region Print Methods
 
@@ -15,13 +15,21 @@ void PrintInt(int data)
     Console.WriteLine(data);
 }
 
-void PrintCollection(IEnumerable<int> arr)
+void PrintCollection<TValue>(IEnumerable<TValue> arr)
 {
     for (int i = 0; i < arr.Count(); i++)
     {
         Console.Write(arr.ElementAt(i) + " ");
     }
     Console.WriteLine();
+}
+
+void Print2DCollection<T>(IEnumerable<IEnumerable<T>> collection)
+{
+    foreach (var innerCollection in collection)
+    {
+        PrintCollection(innerCollection);
+    }
 }
 
 void PrintBoolean(bool data)
