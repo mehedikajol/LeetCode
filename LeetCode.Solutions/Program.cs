@@ -1,12 +1,12 @@
 ﻿using LeetCode.Solutions;
 
-int[] data = [8154, 9139, 8194, 3346, 5450, 9190, 133, 8239, 4606, 8671, 8412, 6290];
+int[] data = [1, 1, 1, 3, 3, 4, 3, 2, 4, 2];
 
-var obj = new LeetCode_02404();
+var obj = new LeetCode_00217();
 
-var result = obj.MostFrequentEven(data);
+var result = obj.ContainsDuplicate(data);
 
-PrintInt(result);
+PrintBoolean(result);
 
 #region Print Methods
 
@@ -22,6 +22,11 @@ void PrintCollection(IEnumerable<int> arr)
         Console.Write(arr.ElementAt(i) + " ");
     }
     Console.WriteLine();
+}
+
+void PrintBoolean(bool data)
+{
+    Console.WriteLine(data ? "True" : "False");
 }
 
 #endregion
