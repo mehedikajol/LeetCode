@@ -1,10 +1,11 @@
 ﻿using LeetCode.Solutions;
 
 int[][] data = [[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]];
+int[] newInterval = [4, 8];
 
-var obj = new LeetCode_00056();
+var obj = new LeetCode_00057();
 
-var result = obj.Merge(data);
+var result = obj.Insert(data, newInterval);
 
 Print2DCollection(result);
 
