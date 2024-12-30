@@ -1,14 +1,15 @@
-﻿namespace LeetCode.Solutions;
+﻿
+// problem name: Frequent Even Element
+// problem url: https://leetcode.com/problems/most-frequent-even-element/description/
+
+// Author: Mehedi Hasan Kajol
+// Date: 21 Dec 2024
+// Profile: https://leetcode.com/u/Mehedi/ 
+
+namespace LeetCode.Solutions;
 
 internal class LeetCode_02404
 {
-    // problem name: Frequent Even Element
-    // problem url: https://leetcode.com/problems/most-frequent-even-element/description/
-
-    // Author: Mehedi Hasan Kajol
-    // Date: 21 Dec 2024
-    // Profile: https://leetcode.com/u/Mehedi/ 
-
     public int MostFrequentEven(int[] nums)
     {
         var valuesTable = new SortedDictionary<int, int>();

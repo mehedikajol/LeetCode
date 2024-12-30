@@ -1,14 +1,15 @@
-﻿namespace LeetCode.Solutions;
+﻿
+// problem name: Insert Interval
+// problem url: https://leetcode.com/problems/insert-interval/description/
+
+// Author: Mehedi Hasan Kajol
+// Date: 30 Dec 2024
+// Profile: https://leetcode.com/u/Mehedi/ 
+
+namespace LeetCode.Solutions;
 
 internal class LeetCode_00057
 {
-    // problem name: Insert Interval
-    // problem url: https://leetcode.com/problems/insert-interval/description/
-
-    // Author: Mehedi Hasan Kajol
-    // Date: 30 Dec 2024
-    // Profile: https://leetcode.com/u/Mehedi/ 
-
     public int[][] Insert(int[][] intervals, int[] newInterval)
     {
         intervals = intervals

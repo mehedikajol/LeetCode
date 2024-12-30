@@ -1,14 +1,15 @@
-﻿namespace LeetCode.Solutions;
+﻿
+// problem name: Majority Element
+// problem url: https://leetcode.com/problems/majority-element/description/
+
+// Author: Mehedi Hasan Kajol
+// Date: 20 Dec 2024
+// Profile: https://leetcode.com/u/Mehedi/
+
+namespace LeetCode.Solutions;
 
 internal class LeetCode_00169
 {
-    // problem name: Majority Element
-    // problem url: https://leetcode.com/problems/majority-element/description/
-
-    // Author: Mehedi Hasan Kajol
-    // Date: 20 Dec 2024
-    // Profile: https://leetcode.com/u/Mehedi/
-
     public int MajorityElement(int[] nums)
     {
         var valuesTable = new Dictionary<int, int>();
