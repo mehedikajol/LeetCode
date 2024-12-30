@@ -11,19 +11,25 @@ internal class LeetCode_00217
 
     public bool ContainsDuplicate(int[] nums)
     {
-        Dictionary<int, int> keyValuePairs = new();
-
-        for (int i = 0; i < nums.Length; i++)
+        HashSet<int> values = new(nums);
+        if(values.Count != nums.Length)
         {
-            if (keyValuePairs.ContainsKey(nums[i]))
-            {
-                return true;
-            }
-            else
-            {
-                keyValuePairs.Add(nums[i], 1);
-            }
+            return true;
         }
+
+        //Dictionary<int, int> keyValuePairs = new();
+
+        //for (int i = 0; i < nums.Length; i++)
+        //{
+        //    if (keyValuePairs.ContainsKey(nums[i]))
+        //    {
+        //        return true;
+        //    }
+        //    else
+        //    {
+        //        keyValuePairs.Add(nums[i], 1);
+        //    }
+        //}
 
         return false;
     }
