@@ -1,13 +1,12 @@
 ﻿using LeetCode.Solutions;
 
-int[][] data = [[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]];
-int[] newInterval = [4, 8];
+int[] data = [-10, -8, -2, 1, 2, 5, 6];
 
-var obj = new LeetCode_00057();
+var obj = new LeetCode_00167();
 
-var result = obj.Insert(data, newInterval);
+var result = obj.TwoSum(data, 10);
 
-Print2DCollection(result);
+PrintCollection(result);
 
 #region Print Methods
 
