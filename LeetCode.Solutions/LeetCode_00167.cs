@@ -12,21 +12,42 @@ internal class LeetCode_00167
 {
     public int[] TwoSum(int[] numbers, int target)
     {
-        Dictionary<int, int> keyValuePairs = new();
+        int left = 0, right = numbers.Length - 1;
 
-        for(int i = 0; i< numbers.Length; i++)
+        while (left < right)
         {
-            int diff = target - numbers[i];
-            if(keyValuePairs.ContainsKey(diff))
+            int sum = numbers[left] + numbers[right];
+            if (sum == target)
             {
-                return [keyValuePairs[diff] + 1, i + 1];
+                return [left + 1, right + 1];
+            }
+            else if (sum < target)
+            {
+                left++;
             }
             else
             {
-                keyValuePairs[numbers[i]] = i;
+                right--;
             }
         }
 
-        return [0, 0];
+        return [left, right];
+
+        //Dictionary<int, int> keyValuePairs = new();
+
+        //for(int i = 0; i< numbers.Length; i++)
+        //{
+        //    int diff = target - numbers[i];
+        //    if(keyValuePairs.ContainsKey(diff))
+        //    {
+        //        return [keyValuePairs[diff] + 1, i + 1];
+        //    }
+        //    else
+        //    {
+        //        keyValuePairs[numbers[i]] = i;
+        //    }
+        //}
+
+        //return [0, 0];
     }
 }

@@ -4,7 +4,7 @@ int[] data = [-10, -8, -2, 1, 2, 5, 6];
 
 var obj = new LeetCode_00167();
 
-var result = obj.TwoSum(data, 10);
+var result = obj.TwoSum(data, 0);
 
 PrintCollection(result);
 
