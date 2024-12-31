@@ -1,12 +1,13 @@
 ﻿using LeetCode.Solutions;
 
-int[] data = [0, 0, 0, 0];
+int[] data = [2, 0, 2, 1, 1, 0, 0, 1, -1, -9, 10];
 
-var obj = new LeetCode_00015();
+var obj = new LeetCode_00075();
 
-var result = obj.ThreeSum(data);
+//var result = obj.SortColors(nums: data);
+obj.SortColors(data);
 
-Print2DCollection(result);
+PrintCollection(data);
 
 #region Print Methods
 
