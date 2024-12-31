@@ -81,6 +81,25 @@ internal class LeetCode_00075
         }
     }
 
+    // Insertion Sort
+    private void InsertionSort(int[] nums)
+    {
+        int length = nums.Length;
+
+        for (int i = 1; i < length; i++)
+        {
+            int elemtentToCompare = nums[i];
+            int j = i - 1;
+
+            while (j >= 0 && nums[j] > elemtentToCompare)
+            {
+                nums[j + 1] = nums[j];
+                j--;
+            }
+            nums[j + 1] = elemtentToCompare;
+        }
+    }
+
     /// <summary>
     /// Swap array elements
     /// </summary>
