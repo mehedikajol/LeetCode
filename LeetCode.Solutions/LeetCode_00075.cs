@@ -12,7 +12,7 @@ internal class LeetCode_00075
 {
     public void SortColors(int[] nums)
     {
-        BubbleSort_Optimized(nums);
+        SelectionSort(nums);
     }
 
     // Bubble Sort
@@ -61,6 +61,32 @@ internal class LeetCode_00075
         }
     }
 
+    // Selection Sort
+    private void SelectionSort(int[] nums)
+    {
+        int length = nums.Length;
+
+        for (int i = 0; i < length - 1; i++)
+        {
+            int min_index = i;
+            for (int j = i + 1; j < length; j++)
+            {
+                if (nums[j] < nums[min_index])
+                {
+                    min_index = j;
+                }
+            }
+
+            SwapArrayElements(nums, min_index, i);
+        }
+    }
+
+    /// <summary>
+    /// Swap array elements
+    /// </summary>
+    /// <param name="nums">Inputed array needs to be swapped</param>
+    /// <param name="indexOne">Swap element index one</param>
+    /// <param name="indexTwo">Swap element index two</param>
     private void SwapArrayElements(int[] nums, int indexOne, int indexTwo)
     {
         int temp = nums[indexOne];
