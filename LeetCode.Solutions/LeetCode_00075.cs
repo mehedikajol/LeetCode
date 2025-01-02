@@ -12,7 +12,7 @@ internal class LeetCode_00075
 {
     public void SortColors(int[] nums)
     {
-        MergeSort(nums);
+        QuickSort(nums, 0, nums.Length - 1);
     }
 
     #region Bubble Sort
@@ -176,6 +176,38 @@ internal class LeetCode_00075
             i++;
             r++;
         }
+    }
+    #endregion
+
+    #region Quick Sort
+    // Quick Sort
+    private void QuickSort(int[] array, int start, int end)
+    {
+        if (end <= start)
+            return;
+
+        int pivot = Partition(array, start, end);
+        QuickSort(array, start, pivot - 1);
+        QuickSort(array, pivot + 1, end);
+    }
+
+    private int Partition(int[] array, int start, int end)
+    {
+        int pivot = array[end];
+        int i = start - 1;
+
+        for (int j = start; j <= end - 1; j++)
+        {
+            if (array[j] < pivot)
+            {
+                i++;
+                SwapArrayElements(array, i, j);
+            }
+        }
+        i++;
+        SwapArrayElements(array, i, end);
+
+        return i;
     }
     #endregion
 
