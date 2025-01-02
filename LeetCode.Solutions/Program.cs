@@ -1,11 +1,11 @@
 ﻿using LeetCode.Solutions.Solution;
 
 int[] data = [1, 8, 6, 2, 5, 4, 8, 3, 7];
-string stringData = "A man, a plan, a canal: Panama";
+string s = "rat", t = "car";
 
-var obj = new LeetCode_00125();
+var obj = new LeetCode_00242();
 
-var result = obj.IsPalindrome(stringData);
+var result = obj.IsAnagram(s, t);
 //obj.SortColors(data);
 
 PrintBoolean(result);
