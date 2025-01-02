@@ -1,14 +1,14 @@
 ﻿using LeetCode.Solutions.Solution;
 
 int[] data = [1, 8, 6, 2, 5, 4, 8, 3, 7];
-string s = "rat", t = "car";
+string s = "abccccdd";
 
-var obj = new LeetCode_00242();
+var obj = new LeetCode_00409();
 
-var result = obj.IsAnagram(s, t);
+var result = obj.LongestPalindrome(s);
 //obj.SortColors(data);
 
-PrintBoolean(result);
+PrintInt(result);
 
 #region Print Methods
 
