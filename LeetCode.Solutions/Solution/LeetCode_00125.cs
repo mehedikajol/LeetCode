@@ -1,4 +1,11 @@
-﻿namespace LeetCode.Solutions.Solution;
+﻿// problem name: Valid Palindrome
+// problem url: https://leetcode.com/problems/valid-palindrome/description/
+
+// Author: Mehedi Hasan Kajol
+// Date: 02 Jan 2025
+// Profile: https://leetcode.com/u/Mehedi/ 
+
+namespace LeetCode.Solutions.Solution;
 
 internal class LeetCode_00125
 {
