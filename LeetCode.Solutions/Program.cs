@@ -1,13 +1,13 @@
-﻿using LeetCode.Solutions;
+﻿using LeetCode.Solutions.Solution;
 
-int[] data = [2, 0, 2, 1, 1, 0, 0, 1, -1, -9, 10];
+int[] data = [1, 8, 6, 2, 5, 4, 8, 3, 7];
 
-var obj = new LeetCode_00075();
+var obj = new LeetCode_00011();
 
-//var result = obj.SortColors(nums: data);
-obj.SortColors(data);
+var result = obj.MaxArea(data);
+//obj.SortColors(data);
 
-PrintCollection(data);
+PrintInt(result);
 
 #region Print Methods
 
