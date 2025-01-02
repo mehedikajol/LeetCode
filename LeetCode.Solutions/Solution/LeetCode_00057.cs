@@ -1,18 +1,21 @@
-﻿
-// problem name: Merge Intervals
-// problem url: https://leetcode.com/problems/merge-intervals/description/
+﻿// problem name: Insert Interval
+// problem url: https://leetcode.com/problems/insert-interval/description/
 
 // Author: Mehedi Hasan Kajol
 // Date: 30 Dec 2024
 // Profile: https://leetcode.com/u/Mehedi/ 
 
-namespace LeetCode.Solutions;
+namespace LeetCode.Solutions.Solution;
 
-internal class LeetCode_00056
+internal class LeetCode_00057
 {
-    public int[][] Merge(int[][] intervals)
+    public int[][] Insert(int[][] intervals, int[] newInterval)
     {
-        intervals = intervals.OrderBy(x => x[0]).ToArray();
+        intervals = intervals
+            .Append(newInterval)
+            .OrderBy(x => x[0])
+            .ToArray();
+
         List<int[]> result = new();
 
         result.Add(intervals[0]);

@@ -1,12 +1,11 @@
-﻿
-// problem name: Contains Duplicate
+﻿// problem name: Contains Duplicate
 // problem url: https://leetcode.com/problems/contains-duplicate/description/
 
 // Author: Mehedi Hasan Kajol
 // Date: 30 Dec 2024
 // Profile: https://leetcode.com/u/Mehedi/
 
-namespace LeetCode.Solutions;
+namespace LeetCode.Solutions.Solution;
 
 internal class LeetCode_00217
 {

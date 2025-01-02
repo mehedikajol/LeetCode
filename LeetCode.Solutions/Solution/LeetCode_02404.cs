@@ -1,12 +1,11 @@
-﻿
-// problem name: Frequent Even Element
+﻿// problem name: Frequent Even Element
 // problem url: https://leetcode.com/problems/most-frequent-even-element/description/
 
 // Author: Mehedi Hasan Kajol
 // Date: 21 Dec 2024
 // Profile: https://leetcode.com/u/Mehedi/ 
 
-namespace LeetCode.Solutions;
+namespace LeetCode.Solutions.Solution;
 
 internal class LeetCode_02404
 {

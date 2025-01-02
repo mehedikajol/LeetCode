@@ -1,12 +1,11 @@
-﻿
-// problem name: Two Sum II - Input Array Is Sorted
+﻿// problem name: Two Sum II - Input Array Is Sorted
 // problem url: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
 
 // Author: Mehedi Hasan Kajol
 // Date: 30 Dec 2024
 // Profile: https://leetcode.com/u/Mehedi/ 
 
-namespace LeetCode.Solutions;
+namespace LeetCode.Solutions.Solution;
 
 internal class LeetCode_00167
 {

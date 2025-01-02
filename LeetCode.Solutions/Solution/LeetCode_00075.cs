@@ -1,12 +1,11 @@
-﻿
-// problem name: Sort Colors
+﻿// problem name: Sort Colors
 // problem url: https://leetcode.com/problems/sort-colors/description/
 
 // Author: Mehedi Hasan Kajol
 // Date: 31 Dec 2024
 // Profile: https://leetcode.com/u/Mehedi/
 
-namespace LeetCode.Solutions;
+namespace LeetCode.Solutions.Solution;
 
 internal class LeetCode_00075
 {
