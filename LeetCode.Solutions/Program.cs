@@ -1,11 +1,12 @@
 ﻿using LeetCode.Solutions.Solution;
 
-int[] data = [1, 8, 6, 2, 5, 4, 8, 3, 7];
+int[] nums = [0, 1, 2, 2, 3, 0, 4, 2];
+int target = 2;
 string s = "-5";
 
-var obj = new LeetCode_00008();
+var obj = new LeetCode_00027();
 
-var result = obj.MyAtoi(s);
+var result = obj.RemoveElement(nums, target);
 //obj.SortColors(data);
 
 PrintInt(result);
