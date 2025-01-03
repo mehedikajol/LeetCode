@@ -2,15 +2,15 @@
 
 int[] nums = [0, 1, 2, 2, 3, 0, 4, 2];
 int target = 2;
-string s = "aa";
+string s = "";
 string p = "aaa";
 
-var obj = new LeetCode_00438();
+var obj = new LeetCode_00020();
 
-var result = obj.FindAnagrams(s, p);
+var result = obj.IsValid(s);
 //obj.SortColors(data);
 
-PrintCollection(result);
+PrintBoolean(result);
 
 #region Print Methods
 
