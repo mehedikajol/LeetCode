@@ -2,14 +2,15 @@
 
 int[] nums = [0, 1, 2, 2, 3, 0, 4, 2];
 int target = 2;
-string s = "cbbddbbc";
+string s = "aa";
+string p = "aaa";
 
-var obj = new LeetCode_00005();
+var obj = new LeetCode_00438();
 
-var result = obj.LongestPalindrome(s);
+var result = obj.FindAnagrams(s, p);
 //obj.SortColors(data);
 
-PrintString(result);
+PrintCollection(result);
 
 #region Print Methods
 
