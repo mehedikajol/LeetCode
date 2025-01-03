@@ -11,21 +11,15 @@ internal class LeetCode_00027
 {
     public int RemoveElement(int[] nums, int val)
     {
-        List<int> list = [];
-
+        int count = 0;
         for (int i = 0; i < nums.Length; i++)
         {
             if (nums[i] != val)
             {
-                list.Add(nums[i]);
+                nums[count++] = nums[i];
             }
         }
 
-        for (int i = 0; i < list.Count; i++)
-        {
-            nums[i] = list[i];
-        }
-
-        return list.Count;
+        return count;
     }
 }
