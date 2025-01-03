@@ -2,7 +2,7 @@
 
 int[] nums = [0, 1, 2, 2, 3, 0, 4, 2];
 int target = 2;
-string s = "";
+string s = "[{[]}][";
 string p = "aaa";
 
 var obj = new LeetCode_00020();

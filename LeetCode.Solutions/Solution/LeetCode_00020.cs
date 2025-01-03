@@ -11,24 +11,32 @@ internal class LeetCode_00020
 {
     public bool IsValid(string s)
     {
-        Stack<char> closes = [];
-        Dictionary<char, char> keys = new Dictionary<char, char> { { '(', ')' }, { '{', '}' }, { '[', ']' } };
+        List<char> stack = [];
 
         for (int i = 0; i < s.Length; i++)
         {
-            if (keys.ContainsKey(s[i]))
+            if (s[i] == '(')
             {
-                closes.Push(keys[s[i]]);
+                stack.Add(')');
+            }
+            else if (s[i] == '{')
+            {
+                stack.Add('}');
+            }
+            else if (s[i] == '[')
+            {
+                stack.Add(']');
             }
             else
             {
-                if (!closes.Any() || closes.Pop() != s[i])
+                if (stack.Count == 0 || stack[stack.Count - 1] != s[i])
                 {
                     return false;
                 }
+                stack.RemoveAt(stack.Count - 1);
             }
         }
 
-        return !closes.Any();
+        return stack.Count == 0;
     }
 }
