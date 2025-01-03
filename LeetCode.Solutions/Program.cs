@@ -2,14 +2,14 @@
 
 int[] nums = [0, 1, 2, 2, 3, 0, 4, 2];
 int target = 2;
-string s = "-5";
+string s = "cbbddbbc";
 
-var obj = new LeetCode_00027();
+var obj = new LeetCode_00005();
 
-var result = obj.RemoveElement(nums, target);
+var result = obj.LongestPalindrome(s);
 //obj.SortColors(data);
 
-PrintInt(result);
+PrintString(result);
 
 #region Print Methods
 
@@ -38,6 +38,11 @@ void Print2DCollection<T>(IEnumerable<IEnumerable<T>> collection)
 void PrintBoolean(bool data)
 {
     Console.WriteLine(data ? "True" : "False");
+}
+
+void PrintString(string s)
+{
+    Console.WriteLine(s);
 }
 
 #endregion
