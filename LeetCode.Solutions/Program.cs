@@ -1,11 +1,11 @@
 ﻿using LeetCode.Solutions.Solution;
 
 int[] data = [1, 8, 6, 2, 5, 4, 8, 3, 7];
-string s = "abccccdd";
+string s = "abcabcbb";
 
-var obj = new LeetCode_00409();
+var obj = new LeetCode_00003();
 
-var result = obj.LongestPalindrome(s);
+var result = obj.LengthOfLongestSubstring(s);
 //obj.SortColors(data);
 
 PrintInt(result);
