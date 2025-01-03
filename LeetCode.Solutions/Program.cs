@@ -1,11 +1,11 @@
 ﻿using LeetCode.Solutions.Solution;
 
 int[] data = [1, 8, 6, 2, 5, 4, 8, 3, 7];
-string s = "abcabcbb";
+string s = "-5";
 
-var obj = new LeetCode_00003();
+var obj = new LeetCode_00008();
 
-var result = obj.LengthOfLongestSubstring(s);
+var result = obj.MyAtoi(s);
 //obj.SortColors(data);
 
 PrintInt(result);
